@@ -25,13 +25,6 @@ public class PlayerModel
         get { return _jumpForce; }
         set { _jumpForce = value; }
     }
-    
-    private float _moveSpeed;
-    public float MoveSpeed
-    {
-        get { return _moveSpeed; }
-        set { _moveSpeed = value; }
-    }
 
     private bool _isGrounded;
     public bool IsGrounded
