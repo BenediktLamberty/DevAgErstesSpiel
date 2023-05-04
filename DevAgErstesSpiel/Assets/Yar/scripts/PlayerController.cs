@@ -26,13 +26,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             _playerModel.CanFly = true;
             _playerRigidbody.bodyType = RigidbodyType2D.Static;
             _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             _playerModel.CanFly = false;
             _playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position += new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
         }
-        if (Input.GetKey(KeyCode.Space) && Mathf.Abs(_playerRigidbody.velocity.y) < 0.001f)
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(_playerRigidbody.velocity.y) < 0.001f)
             _playerRigidbody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
     }
 
