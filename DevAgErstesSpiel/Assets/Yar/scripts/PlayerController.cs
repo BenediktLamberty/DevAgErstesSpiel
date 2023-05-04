@@ -20,25 +20,26 @@ public class PlayerController : MonoBehaviour
         _playerModel.CanFly = true;
         _playerModel.Speed = 10f;
         _playerModel.JumpForce = 10f;
-        _playerModel.IsGrounded = false;
         _playerCamera = Camera.main;
         _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
     }
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             _playerModel.CanFly = true;
+            _playerRigidbody.bodyType = RigidbodyType2D.Static;
             _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
         }
-        else if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             _playerModel.CanFly = false;
+            _playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
         }
 
         if (_playerModel.CanFly)
-            FlyToMousePosition(this.transform, _playerModel.Speed);
+            FlyToMousePosition(transform, _playerModel.Speed);
         else
         {
             Movement(_playerModel.Speed, _playerModel.JumpForce);
@@ -48,12 +49,11 @@ public class PlayerController : MonoBehaviour
 
     private void Movement(float speed, float jumpForce)
     {
-        _playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
         if (Input.GetAxis("Horizontal") > 0)
         {
             transform.position += new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(_playerRigidbody.velocity.y) < 0.05f)
+        if (Input.GetKey(KeyCode.Space) && Mathf.Abs(_playerRigidbody.velocity.y) < 0.001f)
             _playerRigidbody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
     }
 
@@ -68,7 +68,6 @@ public class PlayerController : MonoBehaviour
     private bool _isMoving;
     private void FlyToMousePosition(Transform transform, float speed)  
     {
-        _playerRigidbody.bodyType = RigidbodyType2D.Static;
         if (Input.GetMouseButtonDown(0))
             _isMoving = true;
 

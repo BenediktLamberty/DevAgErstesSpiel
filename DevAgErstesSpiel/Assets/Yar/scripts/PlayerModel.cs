@@ -25,11 +25,4 @@ public class PlayerModel
         get { return _jumpForce; }
         set { _jumpForce = value; }
     }
-
-    private bool _isGrounded;
-    public bool IsGrounded
-    {
-        get { return _isGrounded; }
-        set { _isGrounded = value; }
-    }
 }
