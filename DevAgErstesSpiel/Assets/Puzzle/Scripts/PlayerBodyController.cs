@@ -6,10 +6,8 @@ public class PlayerBodyController : MonoBehaviour
 {
     private PlayerBodyModel _playerBodyModel;
     private PlayerBodyView _playerBodyView;
-    private SpriteRenderer _playerBodySpriteRender;
     private Rigidbody2D _playerBodyRigidbody;
     private PolygonCollider2D _playerBodyPolygonCollider;
-    private Camera _playerBodyCamera;
     private PlayerController _playerController;
 
     private void Awake()
@@ -17,12 +15,10 @@ public class PlayerBodyController : MonoBehaviour
         _playerBodyModel = new PlayerBodyModel();
         _playerBodyView = GetComponent<PlayerBodyView>();
         _playerBodyRigidbody = GetComponent<Rigidbody2D>();
-        _playerBodySpriteRender = GetComponent<SpriteRenderer>();
         _playerBodyPolygonCollider = GetComponent<PolygonCollider2D>();
         _playerBodyModel.Speed = 10f;
         _playerBodyModel.JumpForce = 10f;
         _playerBodyModel.IsPlayer = false;
-        _playerBodyCamera = Camera.main;
     }
 
     private void Update()
@@ -36,9 +32,7 @@ public class PlayerBodyController : MonoBehaviour
     public void BecamePlayer(PlayerController playerController)
     {
         _playerController = playerController;
-        _playerBodyRigidbody.bodyType = RigidbodyType2D.Dynamic;
         _playerBodyModel.IsPlayer = true;
-        _playerBodyPolygonCollider.isTrigger = false;
     }
 
     private void OnMouseUp()

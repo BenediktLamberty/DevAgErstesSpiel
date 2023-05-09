@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer _playerSpriteRender;
     private BoxCollider2D _playerBoxCollider;
     private PlayerBodyController _playerBodyController;
+    private Vector3 _mousePosition;
 
     private void Awake()
     {
@@ -39,20 +40,18 @@ public class PlayerController : MonoBehaviour
     {
         _playerView.BecameSoul(_playerSpriteRender, _playerBoxCollider);
         _playerModel.HasBody = false;
-        this.transform.position = new Vector3(transform.position.x, transform.position.y + 1f , 0f);
-        _mousePosition = new Vector3(transform.position.x, transform.position.y + 1f, 0f);
+        this.transform.position = new Vector3(transform.position.x, transform.position.y + 1.5f , 0f);
+        _mousePosition = new Vector3(transform.position.x, transform.position.y + 1.5f, 0f);
 
     }
 
     private void Update()
     {
         if (!_playerModel.HasBody)
-            FlyToMousePosition(transform, _playerModel.Speed);
+            FlyToMousePosition(_playerModel.Speed);
     }
 
-
-    private Vector3 _mousePosition;
-    private void FlyToMousePosition(Transform transform, float speed)  
+    private void FlyToMousePosition(float speed)  
     {
         if(Input.GetMouseButton(0))
         {
