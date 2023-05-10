@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Puzzle/Scenes/Menu.unity
+    guid: 580afe6cee39c234fb87ca6fd93f4f37
+  - enabled: 1
+    path: Assets/Puzzle/Scenes/PuzzleTestScene.unity
+    guid: f21946faa36aa034194915cb606630d6
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 53153f6ba256a83428a622242608e0d2, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 391cb4e395892cc41a991112b76e2274, type: 2}
