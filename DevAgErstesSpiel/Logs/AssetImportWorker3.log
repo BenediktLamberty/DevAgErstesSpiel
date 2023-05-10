@@ -1,0 +1,330 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'de' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Amin Salaibi/Documents/GitHub/DevAgErstesSpiel/DevAgErstesSpiel
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+61776
+Successfully changed project path to: C:/Users/Amin Salaibi/Documents/GitHub/DevAgErstesSpiel/DevAgErstesSpiel
+C:/Users/Amin Salaibi/Documents/GitHub/DevAgErstesSpiel/DevAgErstesSpiel
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21320] Host "[IP] 192.168.178.111 [Port] 0 [Flags] 2 [Guid] 3617371905 [EditorId] 3617371905 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-26695Q6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21320] Host "[IP] 192.168.178.111 [Port] 0 [Flags] 2 [Guid] 3617371905 [EditorId] 3617371905 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-26695Q6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 114.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Amin Salaibi/Documents/GitHub/DevAgErstesSpiel/DevAgErstesSpiel/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+received signal from system: SIGSEGV
+Obtained 26 stack frames
+0x00007ff67004ed1d (Unity) 
+0x00007ff6700558d9 (Unity) 
+0x00007ff670fed0a3 (Unity) 
+0x00007ff670054916 (Unity) 
+0x00007ff67004e34c (Unity) 
+0x00007ff67242ca4e (Unity) 
+0x00007ff6724ee448 (Unity) 
+0x00007ff6723f9380 (Unity) 
+0x00007ffa327f23df (ntdll) 
+0x00007ffa327a14a4 (ntdll) 
+0x00007ffa327f0f0e (ntdll) 
+0x00007ff66f8c2f5a (Unity) 
+0x00007ff66f8bdea0 (Unity) 
+0x00007ff66f8bcd4b (Unity) 
+0x00007ff66f8bd425 (Unity) 
+0x00007ff66f8bc67d (Unity) 
+0x00007ff67015baa6 (Unity) 
+0x00007ff67015fd7b (Unity) 
+0x00007ff66fec6295 (Unity) 
+0x00007ff66fec761e (Unity) 
+0x00007ff66fc1fbb2 ((<unknown>)) 
+0x00007ff670b91779 ((<unknown>)) 
+0x00007ff670ff7808 ((<unknown>)) 
+0x00007ff6723d6cbe ((<unknown>)) 
+0x00007ffa31727614 (KERNEL32) BaseThreadInitThunk
+0x00007ffa327a26a1 (ntdll) 
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor;C:\Windows;C:\Windows\system32;', symOptions: 534, UserName: 'Amin Salaibi'
+OS-Version: 10.0.0
+
+========== OUTPUTTING STACK TRACE ==================
+
+SymInit: Symbol-SearchPath: '.;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor;C:\Windows;C:\Windows\system32;', symOptions: 534, UserName: 'Amin Salaibi'
+OS-Version: 10.0.0
+: (00007FF66F030000), size: 74309632 (result: -529697949), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Unknown error [-529697949]' (Address: 0000000000000000)
+: (00007FFA32750000), size: 2064384 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\ntdll.dll'
+: (00007FFA31710000), size: 782336 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\KERNEL32.DLL'
+: (00007FFA30420000), size: 3104768 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\KERNELBASE.dll'
+: (00007FFA2D700000), size: 593920 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\apphelp.dll'
+: (00007FFA2FE30000), size: 1433600 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\CRYPT32.dll'
+: (00007FFA30150000), size: 1048576 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\ucrtbase.dll'
+: (00007FFA324E0000), size: 1691648 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\USER32.dll'
+: (00007FFA30280000), size: 139264 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\win32u.dll'
+: (00007FFA26B40000), size: 208896 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\optix.6.0.0.dll'
+: (00007FFA31B20000), size: 180224 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\GDI32.dll'
+: (00007FF9E9270000), size: 10067968 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA26B10000), size: 180224 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\s3tcompress.dll'
+: (00007FFA30030000), size: 1134592 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2FF90000), size: 643072 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FF9E8B20000), size: 5066752 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA32300000), size: 716800 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA310F0000), size: 647168 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\msvcrt.dll'
+: (00007FFA31030000), size: 638976 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\sechost.dll'
+: (00007FFA1D580000), size: 1740800 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\ispc_texcomp.dll'
+: (0000000180000000), size: 6582272 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\FreeImage.dll'
+: (00007FFA0E3A0000), size: 1441792 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\compress_bc7e.dll'
+: (00007FFA31840000), size: 1204224 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\RPCRT4.dll'
+: (00007FF9AAE80000), size: 48848896 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\OpenImageDenoise.dll'
+: (00007FFA31BB0000), size: 7618560 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\SHELL32.dll'
+: (00007FFA2BAE0000), size: 45056 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\WinPixEventRuntime.dll'
+: (00007FFA317D0000), size: 438272 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\WS2_32.dll'
+: (00007FFA0E270000), size: 1187840 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\umbraoptimizer64.dll'
+: (00007FFA30A40000), size: 348160 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\SHLWAPI.dll'
+: (00007FFA30910000), size: 1220608 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA30BC0000), size: 3489792 (result: 0), SymType: '-deferred-', PDB: ''
+: (00007FFA265D0000), size: 434176 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA316E0000), size: 196608 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA17840000), size: 581632 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA31270000), size: 4620288 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA178D0000), size: 110592 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA303D0000), size: 319488 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\System32\cfgmgr32.dll'
+: (00007FFA30250000), size: 159744 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA09EC0000), size: 1200128 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA32410000), size: 839680 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1F6D0000), size: 180224 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA30360000), size: 421888 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2F290000), size: 245760 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA17830000), size: 49152 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA26420000), size: 282624 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA20EE0000), size: 159744 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA290B0000), size: 1089536 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2E6B0000), size: 53248 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FF9F4B40000), size: 2961408 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FF9CAE00000), size: 9310208 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2DB30000), size: 192512 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA28790000), size: 40960 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA17480000), size: 36864 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2A9C0000), size: 94208 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA20390000), size: 499712 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1AA80000), size: 49152 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\Secur32.dll'
+: (00007FFA2FD20000), size: 204800 (result: 0), SymType: '-deferred-', PDB: ''
+: (000001A16ADE0000), size: 12779520 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\OpenRL.dll'
+: (000000006B3C0000), size: 622592 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\MSVCP100.dll'
+: (000000006BCC0000), size: 856064 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\MSVCR100.dll'
+: (00007FF9A9E90000), size: 16711680 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2F5F0000), size: 434176 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1FAE0000), size: 413696 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA0E180000), size: 978944 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1F850000), size: 679936 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (000001A16BA30000), size: 61440 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2FA20000), size: 73728 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2DD10000), size: 73728 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA30720000), size: 532480 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2D840000), size: 647168 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (000001A16D8C0000), size: 48066560 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA307B0000), size: 708608 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2DF10000), size: 7942144 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2F890000), size: 188416 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2FD70000), size: 126976 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FF9F96D0000), size: 36864 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA28CF0000), size: 1785856 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA30860000), size: 692224 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2B7B0000), size: 258048 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA30F80000), size: 32768 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA29530000), size: 65536 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA297D0000), size: 94208 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA29AA0000), size: 118784 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2F2E0000), size: 831488 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA00760000), size: 94208 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA00740000), size: 110592 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2A880000), size: 86016 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA2B8F0000), size: 118784 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA00720000), size: 73728 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1C310000), size: 532480 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA297A0000), size: 40960 (result: 8), SymType: '-unknown-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA09D00000), size: 1536000 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA18400000), size: 561152 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA1E680000), size: 1982464 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+: (00007FFA32680000), size: 32768 (result: 14), SymType: '-deferred-', PDB: ''
+  ERROR: LoadModule, GetLastError: 'Für diesen Vorgang sind nicht genügend Speicherressourcen verfügbar.' (Address: 0000000000000000)
+SymInit: Symbol-SearchPath: '.;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel;C:\Users\Amin Salaibi\Documents\GitHub\DevAgErstesSpiel\DevAgErstesSpiel\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor;C:\Windows;C:\Windows\system32;', symOptions: 534, UserName: 'Amin Salaibi'
+OS-Version: 10.0.0
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Unknown error [-529697949]' (Address: 00007FF67003EAB8)
+0x00007FF67003EAB8 (Unity) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF67003EBD1)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF67003EBD1)
+0x00007FF67003EBD1 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF67004E48A)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF67004E48A)
+0x00007FF67004E48A ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF67242CA4E)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF67242CA4E)
+0x00007FF67242CA4E ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF6724EE448)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF6724EE448)
+0x00007FF6724EE448 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF6723F9380)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF6723F9380)
+0x00007FF6723F9380 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 00007FFA327F23DF)
+0x00007FFA327F23DF (ntdll) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 00007FFA327A14A4)
+0x00007FFA327A14A4 (ntdll) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 00007FFA327F0F0E)
+0x00007FFA327F0F0E (ntdll) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66F8C2F5A)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66F8C2F5A)
+0x00007FF66F8C2F5A ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66F8BDEA0)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66F8BDEA0)
+0x00007FF66F8BDEA0 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66F8BCD4B)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66F8BCD4B)
+0x00007FF66F8BCD4B ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66F8BD425)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66F8BD425)
+0x00007FF66F8BD425 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66F8BC67D)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66F8BC67D)
+0x00007FF66F8BC67D ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF67015BAA6)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF67015BAA6)
+0x00007FF67015BAA6 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF67015FD7B)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF67015FD7B)
+0x00007FF67015FD7B ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66FEC6295)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66FEC6295)
+0x00007FF66FEC6295 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66FEC761E)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66FEC761E)
+0x00007FF66FEC761E ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF66FC1FBB2)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF66FC1FBB2)
+0x00007FF66FC1FBB2 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF670B91779)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF670B91779)
+0x00007FF670B91779 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF670FF7808)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF670FF7808)
+0x00007FF670FF7808 ((<unknown>)) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Das angegebene Modul wurde nicht gefunden.' (Address: 00007FF6723D6CBE)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FF6723D6CBE)
+0x00007FF6723D6CBE ((<unknown>)) (function-name not available)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FFA31727614)
+0x00007FFA31727614 ((<unknown>)) BaseThreadInitThunk
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Es wurde versucht, auf eine unzulässige Adresse zuzugreifen.' (Address: 00007FFA327A26A1)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Zur Verarbeitung dieses Befehls sind nicht genügend Speicherressourcen verfügbar.' (Address: 00007FFA327A26A1)
+0x00007FFA327A26A1 ((<unknown>)) (function-name not available)
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/AMINSA~1/AppData/Local/Temp/Unity/Editor/Crashes
