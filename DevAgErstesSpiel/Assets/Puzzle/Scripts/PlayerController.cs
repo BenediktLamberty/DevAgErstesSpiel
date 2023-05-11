@@ -20,9 +20,9 @@ public class PlayerController : MonoBehaviour
         _playerView = GetComponent<PlayerView>();
         _playerSpriteRender = GetComponent<SpriteRenderer>();
         _playerBoxCollider = GetComponent<BoxCollider2D>();
+        _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
         _playerModel.HasBody = false;
         _playerModel.Speed = 10f;
-        _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

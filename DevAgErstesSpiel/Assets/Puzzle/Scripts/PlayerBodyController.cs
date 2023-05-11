@@ -63,7 +63,7 @@ public class PlayerBodyController : MonoBehaviour
     /*
     private void CameraFollow(Camera camera)
     {
-        Vector3 target = new Vector3(transform.position.x + 0f, 0f, camera.transform.position.z);
+        Vector3 target = new Vector3(transform.position.x + 0f, 5f, camera.transform.position.z);
         Vector3 currentPosition = Vector3.Lerp(camera.transform.position, target, 1.5f * Time.deltaTime);
         camera.transform.position = currentPosition;
     }
