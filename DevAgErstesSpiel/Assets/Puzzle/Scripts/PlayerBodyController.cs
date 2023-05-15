@@ -19,6 +19,9 @@ public class PlayerBodyController : MonoBehaviour
         _playerBodyModel.Speed = 10f;
         _playerBodyModel.JumpForce = 10f;
         _playerBodyModel.IsPlayer = false;
+        _playerBodyModel.IsFrightened = false;
+        _playerBodyModel.Avoid = new Vector3(Random.Range(-25f, 25f), 0f, 0f);
+        _playerBodyModel.Freeze = 0;
     }
 
     private void Update()
@@ -27,12 +30,17 @@ public class PlayerBodyController : MonoBehaviour
         {
             Movement(_playerBodyModel.Speed, _playerBodyModel.JumpForce);
         }
+        else
+        {
+            NPCMovement(_playerBodyModel.Speed);
+        }
     }
 
     public void BecamePlayer(PlayerController playerController)
     {
         _playerController = playerController;
         _playerBodyModel.IsPlayer = true;
+        _playerBodyModel.IsFrightened = true;
     }
 
     private void OnMouseUp()
@@ -47,6 +55,7 @@ public class PlayerBodyController : MonoBehaviour
 
     private void Movement(float speed, float jumpForce)
     {
+        Debug.Log("Player");
         if (Input.GetAxis("Horizontal") > 0)
         {
             transform.position += new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
@@ -60,6 +69,36 @@ public class PlayerBodyController : MonoBehaviour
                 _playerBodyRigidbody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
+
+    private void NPCMovement(float speed)
+    {
+        if (_playerBodyModel.IsFrightened)
+        {
+            _playerBodyModel.Avoid = _playerController.transform.position;
+            if (Mathf.Abs(Vector3.Distance(transform.position, _playerBodyModel.Avoid)) < 5f)
+            {
+                transform.position += new Vector3(Mathf.Sign((transform.position - _playerBodyModel.Avoid).x) * (5 - Mathf.Abs((transform.position - _playerBodyModel.Avoid).x)) * speed * Time.deltaTime / 5f, 0f, 0f);
+            }
+
+        }
+        else if (_playerBodyModel.Freeze <= 0)
+        {
+            Debug.Log(Vector3.Distance(transform.position, _playerBodyModel.Avoid));
+            if (Mathf.Abs(Vector3.Distance(transform.position, _playerBodyModel.Avoid)) < 3f)
+            {
+                transform.position += new Vector3(Mathf.Sign((transform.position - _playerBodyModel.Avoid).x) * (3 - Mathf.Abs((transform.position - _playerBodyModel.Avoid).x)) * speed * Time.deltaTime / 3f, 0f, 0f);
+            }
+            else
+            {
+                _playerBodyModel.Avoid = new Vector3(Random.Range(-10f, 10f), Random.Range(-5f, 5f), 0f);
+                _playerBodyModel.Freeze = 100;
+            }
+        }
+        _playerBodyModel.Freeze--;
+    }
+
+
+
     /*
     private void CameraFollow(Camera camera)
     {

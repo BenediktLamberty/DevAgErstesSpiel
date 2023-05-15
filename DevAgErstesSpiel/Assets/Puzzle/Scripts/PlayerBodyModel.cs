@@ -11,6 +11,13 @@ public class PlayerBodyModel
         set { _isPlayer = value; }
     }
 
+    private bool _isFrightened;
+    public bool IsFrightened
+    {
+        get { return _isFrightened; }
+        set { _isFrightened = value; }
+    }
+
     private float _speed;
     public float Speed
     {
@@ -23,5 +30,19 @@ public class PlayerBodyModel
     {
         get { return _jumpForce; }
         set { _jumpForce = value; }
+    }
+
+    private Vector3 _avoid;
+    public Vector3 Avoid
+    {
+        get { return _avoid; }
+        set { _avoid = value; }
+    }
+
+    private int _freeze;
+    public int Freeze
+    {
+        get { return _freeze; }
+        set { _freeze = value; }
     }
 }
