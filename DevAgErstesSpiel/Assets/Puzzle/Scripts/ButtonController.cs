@@ -16,27 +16,44 @@ public class ButtonController : MonoBehaviour
         _buttonView = GetComponent<ButtonView>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _buttonChild = transform.GetChild(0).gameObject;
-        _doorGameObject = GameObject.FindWithTag("Door");
+        _doorGameObject = transform.GetChild(3).gameObject;
         _buttonModel.IsOn = false;
+        _buttonModel.IsObjectOnTop = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Body") && !_buttonModel.IsOn)
+        if (!_buttonModel.IsOn)
         {
-            _buttonView.ButtonOn(_buttonChild);
-            _buttonView.DoorOpen(_doorGameObject);
-            _buttonModel.IsOn = true;
+            if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
+            {
+                _buttonView.ButtonOn(_buttonChild);
+                _buttonView.DoorOpen(_doorGameObject);
+                _buttonModel.IsOn = true;
+                _buttonModel.IsObjectOnTop = true;
+            }
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
+        {
+            _buttonModel.IsObjectOnTop = true;
+        }
+    }
+
+
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Body") && _buttonModel.IsOn)
+        if (_buttonModel.IsOn && _buttonModel.IsObjectOnTop)
         {
-            _buttonView.ButtonOff(_buttonChild);
-            _buttonView.DoorClose(_doorGameObject);
-            _buttonModel.IsOn = false;
+            if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
+            {
+                _buttonView.ButtonOff(_buttonChild);
+                _buttonView.DoorClose(_doorGameObject);
+                _buttonModel.IsOn = false;
+            }
         }
     }
 }

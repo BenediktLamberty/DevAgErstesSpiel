@@ -10,4 +10,12 @@ public class ButtonModel
         get { return _isOn; }
         set { _isOn = value; }
     }
+
+    public bool _isObjectOnTop;
+    public bool IsObjectOnTop
+    {
+        get { return _isObjectOnTop; }
+        set { _isObjectOnTop = value; }
+    }
+
 }
