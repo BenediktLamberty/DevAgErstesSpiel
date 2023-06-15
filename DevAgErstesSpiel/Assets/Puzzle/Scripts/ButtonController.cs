@@ -6,54 +6,60 @@ public class ButtonController : MonoBehaviour
 {
     private ButtonModel _buttonModel;
     private ButtonView _buttonView;
-    private BoxCollider2D _boxCollider2D;
-    private GameObject _buttonChild;
+    private Animator _buttonAnimator;
     private GameObject _doorGameObject;
 
     private void Awake()
     {
         _buttonModel = new ButtonModel();
         _buttonView = GetComponent<ButtonView>();
-        _boxCollider2D = GetComponent<BoxCollider2D>();
-        _buttonChild = transform.GetChild(0).gameObject;
-        _doorGameObject = transform.GetChild(3).gameObject;
+        _doorGameObject = transform.GetChild(0).gameObject;
+        _buttonAnimator = GetComponent<Animator>();
         _buttonModel.IsOn = false;
-        _buttonModel.IsObjectOnTop = false;
+        _buttonModel.ObjectsOnTop = 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!_buttonModel.IsOn)
+        if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
         {
-            if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
-            {
-                _buttonView.ButtonOn(_buttonChild);
-                _buttonView.DoorOpen(_doorGameObject);
-                _buttonModel.IsOn = true;
-                _buttonModel.IsObjectOnTop = true;
-            }
+            _buttonModel.ObjectsOnTop++;
+            ActivateButton();
         }
+        Debug.Log(_buttonModel.ObjectsOnTop);
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
         {
-            _buttonModel.IsObjectOnTop = true;
+            ActivateButton();
         }
     }
 
-
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (_buttonModel.IsOn && _buttonModel.IsObjectOnTop)
+        if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
         {
-            if (collision.gameObject.CompareTag("Body") || collision.gameObject.CompareTag("Object"))
-            {
-                _buttonView.ButtonOff(_buttonChild);
-                _buttonView.DoorClose(_doorGameObject);
-                _buttonModel.IsOn = false;
-            }
+            _buttonModel.ObjectsOnTop --;
+            ActivateButton();
+        }
+        Debug.Log(_buttonModel.ObjectsOnTop);
+    }
+
+    private void ActivateButton()
+    {
+        if (_buttonModel.ObjectsOnTop == 0)
+        {
+            _buttonView.DoorClose(_doorGameObject);
+            _buttonView.ButtonOff(_buttonAnimator);
+            _buttonModel.IsOn = false;
+        }
+        else if (_buttonModel.ObjectsOnTop > 0)
+        {
+            _buttonView.DoorOpen(_doorGameObject);
+            _buttonView.ButtonOn(_buttonAnimator);
+            _buttonModel.IsOn = true;
         }
     }
 }

@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
     {
         _playerView.BecameSoul(_playerSpriteRender, _playerBoxCollider);
         _playerModel.HasBody = false;
-        this.transform.position = new Vector3(transform.position.x, transform.position.y + 1.5f , 0f);
-        _mousePosition = new Vector3(transform.position.x, transform.position.y + 1.5f, 0f);
+        this.transform.position = new Vector3(transform.position.x, transform.position.y + 2f , 0f);
+        _mousePosition = new Vector3(transform.position.x, transform.position.y + 2f, 0f);
 
     }
 

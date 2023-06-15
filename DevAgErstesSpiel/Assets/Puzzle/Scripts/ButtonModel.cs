@@ -11,11 +11,11 @@ public class ButtonModel
         set { _isOn = value; }
     }
 
-    public bool _isObjectOnTop;
-    public bool IsObjectOnTop
+    public int _objectsOnTop;
+    public int ObjectsOnTop
     {
-        get { return _isObjectOnTop; }
-        set { _isObjectOnTop = value; }
+        get { return _objectsOnTop; }
+        set { _objectsOnTop = value; }
     }
 
 }

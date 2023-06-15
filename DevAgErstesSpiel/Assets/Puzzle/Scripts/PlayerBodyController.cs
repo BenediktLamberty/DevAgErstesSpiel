@@ -7,18 +7,26 @@ public class PlayerBodyController : MonoBehaviour
     private PlayerBodyModel _playerBodyModel;
     private PlayerBodyView _playerBodyView;
     private Rigidbody2D _playerBodyRigidbody;
-    private PolygonCollider2D _playerBodyPolygonCollider;
     private PlayerController _playerController;
+    private GameObject _boxGameObject;
+    private Rigidbody2D _boxRigidbody;
+
+    public float BodySpeed;
+    public float BodyJumpForce;
+    public bool BodyIsBig;
+
 
     private void Awake()
     {
         _playerBodyModel = new PlayerBodyModel();
         _playerBodyView = GetComponent<PlayerBodyView>();
         _playerBodyRigidbody = GetComponent<Rigidbody2D>();
-        _playerBodyPolygonCollider = GetComponent<PolygonCollider2D>();
-        _playerBodyModel.Speed = 10f;
-        _playerBodyModel.JumpForce = 10f;
+        _boxGameObject = GameObject.FindWithTag("Object");
+        _boxRigidbody = _boxGameObject.GetComponent<Rigidbody2D>();
+        _playerBodyModel.Speed = BodySpeed;
+        _playerBodyModel.JumpForce = BodyJumpForce;
         _playerBodyModel.IsPlayer = false;
+        _playerBodyModel.IsBig = BodyIsBig;
     }
 
     private void Update()
@@ -33,6 +41,10 @@ public class PlayerBodyController : MonoBehaviour
     {
         _playerController = playerController;
         _playerBodyModel.IsPlayer = true;
+        if(_playerBodyModel.IsBig) 
+        {
+            _boxRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        }
     }
 
     private void OnMouseUp()
@@ -41,6 +53,10 @@ public class PlayerBodyController : MonoBehaviour
         {
             _playerBodyModel.IsPlayer = false;
             _playerController.BecameSoul(transform);
+            if (_playerBodyModel.IsBig)
+            {
+                _boxRigidbody.bodyType = RigidbodyType2D.Kinematic;
+            }
         }
 
     }

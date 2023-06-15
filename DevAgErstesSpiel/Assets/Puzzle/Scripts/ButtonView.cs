@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ButtonView : MonoBehaviour
 {
-    public void ButtonOn(GameObject gameObject)
+    public void ButtonOn(Animator animator)
     {
-        gameObject.SetActive(false);
+        animator.SetBool("IsOn", true);
     }
 
-    public void ButtonOff(GameObject gameObject)
+    public void ButtonOff(Animator animator)
     {
-        gameObject.SetActive(true);
+        animator.SetBool("IsOn", false);
     }
 
     public void DoorOpen(GameObject gameObject)

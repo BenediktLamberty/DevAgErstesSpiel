@@ -11,6 +11,13 @@ public class PlayerBodyModel
         set { _isPlayer = value; }
     }
 
+    private bool _isBig;
+    public bool IsBig
+    {
+        get { return _isBig; }
+        set { _isBig = value; }
+    }
+
     private float _speed;
     public float Speed
     {
