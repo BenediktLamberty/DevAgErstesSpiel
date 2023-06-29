@@ -49,13 +49,13 @@ public class ButtonController : MonoBehaviour
 
     private void ActivateButton()
     {
-        if (_buttonModel.ObjectsOnTop == 0)
+        if (_buttonModel.ObjectsOnTop == 0 && _buttonModel.IsOn)
         {
             _buttonView.DoorClose(_doorGameObject);
             _buttonView.ButtonOff(_buttonAnimator);
             _buttonModel.IsOn = false;
         }
-        else if (_buttonModel.ObjectsOnTop > 0)
+        else if (_buttonModel.ObjectsOnTop > 0 && !_buttonModel.IsOn)
         {
             _buttonView.DoorOpen(_doorGameObject);
             _buttonView.ButtonOn(_buttonAnimator);

@@ -301,6 +301,10 @@ PrefabInstance:
       propertyPath: bodySpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6313937844417680231, guid: 94b0eb6296e33924899ad618d18f1f5a, type: 3}
+      propertyPath: CanMoveBox
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b0eb6296e33924899ad618d18f1f5a, type: 3}
 --- !u!1001 &408146703
@@ -371,6 +375,14 @@ PrefabInstance:
       value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 8306107348737386474, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306107348737386474, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1705669206, guid: caf6c0381648f0b4e80a4fa77ff88aca, type: 3}
+    - target: {fileID: 8306107348737386474, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -380,6 +392,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8306107348737386474, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306107348737386474, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8380377187586801976, guid: 0778aec3355219c47911e2012bb7c9b9, type: 3}

@@ -11,11 +11,11 @@ public class PlayerBodyModel
         set { _isPlayer = value; }
     }
 
-    private bool _isBig;
-    public bool IsBig
+    private bool _canMoveBox;
+    public bool CanMoveBox
     {
-        get { return _isBig; }
-        set { _isBig = value; }
+        get { return _canMoveBox; }
+        set { _canMoveBox = value; }
     }
 
     private float _speed;

@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     private PlayerBodyController _playerBodyController;
     private Vector3 _mousePosition;
 
+    public bool HasBody;
+
     private void Awake()
     {
         _playerModel = new PlayerModel();
@@ -21,7 +23,7 @@ public class PlayerController : MonoBehaviour
         _playerSpriteRender = GetComponent<SpriteRenderer>();
         _playerBoxCollider = GetComponent<BoxCollider2D>();
         _mousePosition = new Vector3(transform.position.x, transform.position.y, 0f);
-        _playerModel.HasBody = false;
+        _playerModel.HasBody = HasBody;
         _playerModel.Speed = 10f;
     }
 
@@ -40,8 +42,8 @@ public class PlayerController : MonoBehaviour
     {
         _playerView.BecameSoul(_playerSpriteRender, _playerBoxCollider);
         _playerModel.HasBody = false;
-        this.transform.position = new Vector3(transform.position.x, transform.position.y + 2f , 0f);
-        _mousePosition = new Vector3(transform.position.x, transform.position.y + 2f, 0f);
+        this.transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f , 0f);
+        _mousePosition = new Vector3(transform.position.x, transform.position.y + 2.5f, 0f);
 
     }
 
@@ -49,6 +51,8 @@ public class PlayerController : MonoBehaviour
     {
         if (!_playerModel.HasBody)
             FlyToMousePosition(_playerModel.Speed);
+        else if (_playerModel.HasBody && _playerSpriteRender.enabled)
+            _playerView.BecameBody(_playerSpriteRender, _playerBoxCollider);
     }
 
     private void FlyToMousePosition(float speed)  

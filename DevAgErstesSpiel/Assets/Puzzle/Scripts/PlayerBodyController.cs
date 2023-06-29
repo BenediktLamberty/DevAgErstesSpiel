@@ -13,7 +13,10 @@ public class PlayerBodyController : MonoBehaviour
 
     public float BodySpeed;
     public float BodyJumpForce;
-    public bool BodyIsBig;
+    public bool CanMoveBox;
+    public bool IsPlayer;
+
+    public PlayerController PlayerController;
 
 
     private void Awake()
@@ -25,8 +28,10 @@ public class PlayerBodyController : MonoBehaviour
         _boxRigidbody = _boxGameObject.GetComponent<Rigidbody2D>();
         _playerBodyModel.Speed = BodySpeed;
         _playerBodyModel.JumpForce = BodyJumpForce;
-        _playerBodyModel.IsPlayer = false;
-        _playerBodyModel.IsBig = BodyIsBig;
+        _playerBodyModel.IsPlayer = IsPlayer;
+        _playerBodyModel.CanMoveBox = CanMoveBox;
+        if (_playerBodyModel.IsPlayer)
+            BecamePlayer(PlayerController);
     }
 
     private void Update()
@@ -41,7 +46,7 @@ public class PlayerBodyController : MonoBehaviour
     {
         _playerController = playerController;
         _playerBodyModel.IsPlayer = true;
-        if(_playerBodyModel.IsBig) 
+        if(_playerBodyModel.CanMoveBox) 
         {
             _boxRigidbody.bodyType = RigidbodyType2D.Dynamic;
         }
@@ -53,7 +58,7 @@ public class PlayerBodyController : MonoBehaviour
         {
             _playerBodyModel.IsPlayer = false;
             _playerController.BecameSoul(transform);
-            if (_playerBodyModel.IsBig)
+            if (_playerBodyModel.CanMoveBox)
             {
                 _boxRigidbody.bodyType = RigidbodyType2D.Kinematic;
             }
